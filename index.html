@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>BUYFY.</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -27,62 +31,245 @@
             <h1 class="logo">BUYFY.</h1>
         </div>
         <div class="right">
-            <span class="menu-item">REGISTER</span>
-            <span class="menu-item">SIGN IN</span>
-            <span class="menu-item">Cart (4)</span>
+            <span class="menu-item">REGISTER &nbsp;</span>
+            <span class="menu-item">SIGN IN &nbsp;</span>
+            <div class="cart-container">
+                <i class="fas fa-shopping-cart cart-icon"></i>
+                <span class="cart-count">4</span>
+            </div>
         </div>
     </nav>
 
-    <!-- Slider -->
-    <div class="slider">
-        <div class="arrow left">&#10094;</div>
-        <div class="slides">
-            <!-- Example of a slide -->
-            <div class="slide" style="background-color: #f5fafd;">
-                <img src="https://i.ibb.co/cXFnLLV/3.png" alt="Winter Sale">
-                <div class="slide-info">
-                    <h2>WINTER SALE</h2>
-                    <p>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.</p>
-                    <button>SHOP NOW</button>
-                </div>
+<!-- Slider -->
+<div class="slider">
+    <div class="arrow left">&#10094;</div>
+    <div class="slides">
+        <!-- Slide 1 -->
+        <div class="slide" style="background-color: #f5fafd;">
+            <img src="https://i.ibb.co/cXFnLLV/3.png" alt="Winter Sale" />
+            <div class="slide-info">
+                <h2>WINTER SALE</h2>
+                <p>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.</p>
+                <button>SHOP NOW</button>
             </div>
         </div>
-        <div class="arrow right">&#10095;</div>
-    </div>
-
-    <!-- Categories -->
-    <div class="categories">
-        <!-- Example category -->
-        <div class="category-item">
-            <img src="https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Shirt Style">
-            <div class="category-info">
-                <h2>SHIRT STYLE!</h2>
+        <!-- Slide 2 -->
+        <div class="slide" style="background-color: #fcf1ed;">
+            <img src="https://i.ibb.co/cXFnLLV/3.png" alt="Autumn Collection" />
+            <div class="slide-info">
+                <h2>AUTUMN COLLECTION</h2>
+                <p>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.</p>
+                <button>SHOP NOW</button>
+            </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide" style="background-color: #fbf0f4;">
+            <img src="https://i.ibb.co/DG69bQ4/2.png" alt="Loungewear Love" />
+            <div class="slide-info">
+                <h2>LOUNGEWEAR LOVE</h2>
+                <p>DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.</p>
                 <button>SHOP NOW</button>
             </div>
         </div>
     </div>
+    <div class="arrow right">&#10095;</div>
+</div>
 
-    <!-- Products -->
-    <div class="products">
-        <!-- Example product -->
-        <div class="product">
-            <img src="https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png" alt="Product 1">
-            <div class="product-info">
-                <button>ADD TO CART</button>
-                <button>VIEW</button>
-            </div>
+
+<!-- Categories -->
+<div class="categories">
+    <div class="category-item">
+        <img src="https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Shirt Style" />
+        <div class="category-info">
+            <h1 class="title">SHIRT STYLE!</h1>
+            <button class="shop-now">SHOP NOW</button>
         </div>
     </div>
-
-    <!-- Newsletter -->
-    <div class="newsletter">
-        <h2>Newsletter</h2>
-        <p>Get timely updates from your favorite products.</p>
-        <div class="newsletter-input">
-            <input type="email" placeholder="Your email">
-            <button>SUBSCRIBE</button>
+    <div class="category-item">
+        <img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Loungewear Love" />
+        <div class="category-info">
+            <h1 class="title">LOUNGEWEAR LOVE</h1>
+            <button class="shop-now">SHOP NOW</button>
         </div>
     </div>
+    <div class="category-item">
+        <img src="https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Light Jackets" />
+        <div class="category-info">
+            <h1 class="title">LIGHT JACKETS</h1>
+            <button class="shop-now">SHOP NOW</button>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="product-grid">
+    <!-- Product 1 -->
+    <div class="product-container">
+      <div class="circle"></div>
+      <img src="https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png" alt="Product 1" class="product-image" />
+      <div class="info">
+        <div class="icon-container">
+          <div class="icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="icon">
+            <i class="fas fa-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Product 2 -->
+    <div class="product-container">
+      <div class="circle"></div>
+      <img src="https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png" alt="Product 2" class="product-image" />
+      <div class="info">
+        <div class="icon-container">
+          <div class="icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="icon">
+            <i class="fas fa-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Product 3 -->
+    <div class="product-container">
+      <div class="circle"></div>
+      <img src="https://www.prada.com/content/dam/pradanux_products/U/UCS/UCS319/1YOTF010O/UCS319_1YOT_F010O_S_182_SLF.png" alt="Product 3" class="product-image" />
+      <div class="info">
+        <div class="icon-container">
+          <div class="icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="icon">
+            <i class="fas fa-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Product 4 -->
+    <div class="product-container">
+      <div class="circle"></div>
+      <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQuwQF2y5adGQodWOdMsQZHJvtnMHinjVnjcAl4mMO2vhjHZ4Fb3aGFQeB0DorD9G-Oe10CTqc5S_nQAXrfFT38iFoXw8JmfcZ62zcu6d6c9LXWqNFgwU2s&usqp=CAE" alt="Product 4" class="product-image" />
+      <div class="info">
+        <div class="icon-container">
+          <div class="icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="icon">
+            <i class="fas fa-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Product 5 -->
+    <div class="product-container">
+      <div class="circle"></div>
+      <img src="https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png" alt="Product 5" class="product-image" />
+      <div class="info">
+        <div class="icon-container">
+          <div class="icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="icon">
+            <i class="fas fa-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Product 6 -->
+    <div class="product-container">
+      <div class="circle"></div>
+      <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSv3s1-CrRDeU07cy_bSUFyw6IDAg8aipJnD2sId10Mn7slDypNnK3ve6G_FE4xHWic-qCLoWaDBxtu6hHps_8Bh6FgqhsZzklp66E98iyz_8fEOinlw-IECg&usqp=CAE" alt="Product 6" class="product-image" />
+      <div class="info">
+        <div class="icon-container">
+          <div class="icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="icon">
+            <i class="fas fa-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Product 7 -->
+    <div class="product-container">
+      <div class="circle"></div>
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQc7zxRla0Se4fc6Xpl973Zpxxj5VbzroNWwUQpqeztoj-OtwxlPd-2KJwxME-D4Xrh-T5ze_EFg84B8zSnEOVqJHzHSwFIwKIflYYRcLreVt3mxz0KJr9geA&usqp=CAE" alt="Product 7" class="product-image" />
+      <div class="info">
+        <div class="icon-container">
+          <div class="icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="icon">
+            <i class="fas fa-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Product 8 -->
+    <div class="product-container">
+      <div class="circle"></div>
+      <img src="https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png" alt="Product 8" class="product-image" />
+      <div class="info">
+        <div class="icon-container">
+          <div class="icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="icon">
+            <i class="fas fa-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- Newsletter Section -->
+<div class="newsletter">
+    <h1 class="title">Newsletter</h1>
+    <div class="description">Get timely updates from your favorite products.</div>
+    <div class="input-container">
+      <input type="email" class="input" placeholder="Your email" />
+      <button class="button">
+        <i class="send">send</i> <!-- Material Icon for Send -->
+      </button>
+    </div>
+  </div>
+  
 
     <!-- Footer -->
     <footer class="footer">
